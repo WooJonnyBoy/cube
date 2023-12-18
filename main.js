@@ -14,6 +14,12 @@ const add = (e) => {
   cont.addEventListener("pointermove", move);
 };
 
+const addTwo = (e) => {
+  cube.style.transition = "0s";
+  cont.addEventListener("mousemove", move);
+  cont.addEventListener("pointermove", move);
+};
+
 
 const move = (e) => {
   let { movementX: x, movementY: y } = e;
